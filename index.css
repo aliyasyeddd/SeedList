@@ -1,0 +1,13 @@
+body {
+  background-color: #c9e9d2;
+}
+
+.seedlist-title {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #1b5e20;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 50px;
+}

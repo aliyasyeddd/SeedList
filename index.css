@@ -89,6 +89,8 @@ body {
 .task-input {
   width: 280px;
   padding: 10px 15px;
+  margin: 0 auto 20px auto;
+  display: block;
   border: 2px solid #A5D6A7;
   border-radius: 25px;
   outline: none;

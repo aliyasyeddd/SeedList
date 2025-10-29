@@ -3,18 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="index.css" />
     <title>Seed List</title>
   </head>
   <body>
-    <h1 class="seedlist-title">
-        <img src="images/leaf-ico.png" alt="leaf-holding-paper" width="55px" height="55px">
-      PRODUCTIVITY<br>
-      Sprouting Over Time
-      <img src="images/leaf.png" alt="leaf" width="35px" height="35px" />
-    </h1>
+    <header>
+      <h1 class="seedlist-title">
+        <img
+          src="images/leaf-ico.png"
+          alt="Leaf holding paper"
+          class="icon-left"
+        />
+
+        <div class="title-text">
+          PRODUCTIVITY<br />
+          <span>Sprouting Over Time</span>
+        </div>
+
+        <img
+          src="images/sparkle_Leaf.png"
+          alt="Leaf sparkle"
+          class="icon-right"
+        />
+      </h1>
+    </header>
+    <main>
+      <div class="task-container">
+        <h2 class="tasks">Today’s Tasks</h2>
+        <button class="add-btn">+</button>
+      </div>
+      <ul class="task-list"></ul>
+    </main>
     <script type="module" src="index.js"></script>
   </body>
 </html>

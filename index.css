@@ -28,7 +28,7 @@ body {
   display: block;
   font-size: 1.8rem;
   margin-top: 4px;
-  color: #2E7D32; /* slightly lighter green for 2nd line */
+  color: #2E7D32; 
 }
 
 .icon-left {
@@ -41,128 +41,10 @@ body {
   height: 40px;
 }
 
-.tasks {
-    padding: 40px;
-    color: #5F7161;
-    font-family: 'Comic Neue', cursive;
-    letter-spacing: 4px;
-}
-
-.task-container {
-  display: flex;
-  justify-content: space-between; /* title left, button right */
-  align-items: center;            /* vertical alignment */
-  width: 350px;  
-  margin: 40px auto;                /* wider so text + button fit comfortably */             /* centers container horizontally */
-  background-color: #E8F5E9;      /* soft mint */
-  padding: 5px 10px;
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
-}
-
-.tasks {
-  font-family: 'Comic Neue', cursive;
-  font-size: 1.4rem;
-  color: #1B5E20;                 /* deep green text */
-  margin: 0;
-  letter-spacing: 1px;
-}
-
-.add-btn {
-  background-color: #66BB6A;      /* lively green */
-  color: white;
-  font-size: 1.4rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.add-btn:hover {
-  background-color: #43A047;
-  transform: scale(1.1);
-}
-
-.task-input {
-  width: 280px;
-  padding: 10px 15px;
-  margin: 0 auto 20px auto;
-  display: block;
-  border: 2px solid #A5D6A7;
-  border-radius: 25px;
-  outline: none;
-  font-size: 1rem;
-  color: #2E7D32;
-  background-color: #FFFFFF;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
-}
-
-.task-input::placeholder {
-  color: #81C784;
-}
-
-
 .task-list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
-  margin: 0 auto;
-  width: 350px;
+  margin: 20px auto;
+  max-width: 400px;
+  background-color: #A5D6A7;
 }
-
-/* Each task item */
-.task-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #F1F8E9;
-  margin: 8px 0;
-  padding: 10px 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-/* Checkbox + text */
-.task-checkbox {
-  accent-color: #66BB6A; /* modern green checkbox */
-  cursor: pointer;
-}
-
-.task-text {
-  flex: 1;
-  margin-left: 10px;
-  color: #2E7D32;
-  font-family: 'Poppins', sans-serif;
-}
-.task-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.edit-icon {
-  color: #EDA35A; /* calm green for edit */
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.edit-icon:hover {
-  color: #2E7D32;  /* darker green on hover */
-  transform: scale(1.2);
-}
-
-.delete-icon {
-  color: #E53935;  /* red for delete */
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.delete-icon:hover {
-  color: #C62828;
-  transform: scale(1.2);
-}
-

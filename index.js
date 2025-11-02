@@ -13,6 +13,7 @@ addBtn.addEventListener("click", function () {
     taskInput.value = ""
 })
 
+
 function renderTasks() {
     let taskListHTML = ""
     for (let tasks of taskList) {

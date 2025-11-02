@@ -11,6 +11,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="index.css" />
@@ -38,11 +45,16 @@
       </h1>
     </header>
     <main>
-      <div class="task-container">
-        <h2 class="tasks">Today’s Tasks</h2>
+      <h2 class="title">Today’s Tasks</h2>
+      <div class="task-add-section">
+        <input
+          type="text"
+          id="task-input"
+          class="task-input"
+          placeholder="New task..."
+        />
+        <button class="add-btn">+</button>
       </div>
-      <button class="add-btn">+</button>
-      <input type="text" id="task-input" class="task-input" placeholder="New task..." />
       <ul class="task-list"></ul>
     </main>
     <script type="module" src="index.js" defer></script>

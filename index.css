@@ -2,7 +2,6 @@ body {
   background-color: #c9e9d2;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .seedlist-title {
@@ -11,9 +10,9 @@ body {
   justify-content: center;
   text-align: center;
   gap: 12px;
-  font-family: 'Comic Neue', cursive;
+  font-family: "Comic Neue", cursive;
   font-weight: 700;
-  color: #1B5E20;
+  color: #1b5e20;
   padding: 15px 25px;
   margin: 40px auto;
 }
@@ -28,7 +27,7 @@ body {
   display: block;
   font-size: 1.8rem;
   margin-top: 4px;
-  color: #2E7D32; 
+  color: #2e7d32;
 }
 
 .icon-left {
@@ -41,10 +40,85 @@ body {
   height: 40px;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+  color: #3e5f44;
+}
+
+.task-add-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.task-input {
+  padding: 8px 12px;
+  font-size: 1.1rem;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  width: 180px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 6px rgba(46, 125, 50, 0.5);
+}
+
+.add-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
 .task-list {
-  list-style-type: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
   padding: 0;
-  margin: 20px auto;
-  max-width: 400px;
-  background-color: #A5D6A7;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 120px;
+  width: 180px;
+  height: 20px;
+  background: #c9e9d2;
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 15px 35px;
+  font-size: 1rem;
+}
+
+.fa-pen-to-square {
+  cursor: pointer;
+}
+
+.fa-trash {
+  cursor: pointer;
 }
